@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heading
+    {
+        color: rebeccapurple;
+        font-size: large;
+        font-weight: 100;
+        text-decoration: dotted;
+    }
+</style>
+<body>
+    <div id="divElement"></div>
+</body>
+</html>
+<script>
+    let h1   = document.createElement('h1')
+    //let body = document.body.appendChild(h1)
+    let text = h1.textContent = 'Web Technlogies'
+    let containerElement = document.getElementById('divElement')
+    containerElement.appendChild(h1)
+    let button = document.createElement('button')
+    let button2 = document.createElement('button')
+    button.textContent = 'Change Colors'
+    containerElement.appendChild(button)
+    containerElement.append(button2)
+    button2.textContent = 'Remove Colors'
+    console.log(containerElement);
+   // h1.classList.add('heading')
+    button.onclick = function()
+    {
+        h1.classList.add('heading')
+    }
+
+    button2.onclick = function()
+    {
+        h1.classList.remove('heading')
+    }
+
+
+    
+    // let messageTest = function ()
+    // {
+    //     console.log('HELLO WORLD')
+    // }
+    // messageTest()
+//     let div = document.getElementById('divElement')
+//     let button = document.createElement('button')
+//     document.body.appendChild(button)
+//     button.textContent = 'Save Changes'
+
+//     let changeColors = button.oncli
+//     {
+//         console.log('Print Data')
+//     }
+//     //let appendChi = document.div.appendChild(h1)
+//     //console.log(appendChi)
+
+    
+//    console.log(body)
+let array = [1,3,4,5]
+console.log(array[0])
+console.log(array.length)
+array.push('Hello world')
+console.log(array)
+let nn = array.pop()
+console.log(nn)
+
+
+function msg()
+{
+    console.log('TEST')
+}
+msg()
+
+let message = function()
+{
+    console.log('HELLO')
+}
+message()
+
+let person ={
+    name :'Vishnu',
+    age : 20,
+    gender : 'Male',
+    '3232golla': 'dwda',
+    run : function()
+    {
+        console.log('Check the values in console')
+    },
+    habits:['1','2','3'],
+    car:
+    {
+        name : 'Murali',
+        age : 10,
+        color: 'black'
+
+    }
+}
+let key='name';
+console.log(person.name)
+console.log(person['key'])
+let {name,age,gender}=person
+console.log(name,age,gender)
+console.log(key)
+console.log(person['key'])
+console.log(person['gender'])
+console.log(person['3232golla'])
+person.vishnu = 'yeadav'
+person.golla ='Golla'
+person['Rupa'] = 'Rupa'
+person.Rupa
+console.log(person)
+person.run()
+person.habits
+console.log(person.habits)
+console.log(person.habits[0])
+console.log(person["habits"][0])
+for (let i = 0; i < person.habits.length; i++) {
+  console.log(person.habits[i]);
+  console.log(person['habits'][i])
+}
+console.log(person.car.name)
+person.car.name = 'Adi Car'
+console.log(person.car.name)
+console.log(person.car)
+console.log(person['car'])
+</script>

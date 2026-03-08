@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-row flex-container" id="divContainer">
+  <p id="p1">0</p>
+  <p>+</p>
+  <p id="p2">0</p>
+  <p>=</p>
+  <input type="text" id="typedvalues">
+  
+  
+</div>
+<br>
+<button onclick="check()">click</button>
+<h1 id="success"></h1>
+</body>
+
+</html>
+<script>
+    let math1 = Math.random();
+    //console.log(math)
+    let number = Math.ceil(math1*100);
+    let math2 = Math.random();
+    let number2 = Math.ceil(math2*100)
+    console.log(number)
+    console.log(number2)
+    let p1 = document.getElementById('p1').textContent = number
+    let p2 = document.getElementById('p2').textContent = number2
+   // let textvalue = document.getElementById("typedvalues").value;
+    let buttonreset = document.createElement('button')
+    let divContainer = document.getElementById('divContainer')
+    divContainer.appendChild(buttonreset).textContent = 'Reset'
+    let textvalue = document.getElementById("typedvalues").value;
+    console.log(typeof(textvalue))
+    let int = parseInt(textvalue)
+    console.log(p1+p2)
+    buttonreset.onclick = function()
+   {    let math1 = Math.random();
+        //console.log(math)
+        let number = Math.ceil(math1*100);
+        let math2 = Math.random();
+        let number2 = Math.ceil(math2*100)
+        let p1 = document.getElementById('p1').textContent = number
+        let p2 = document.getElementById('p2').textContent = number2
+        let textvalue = document.getElementById("typedvalues").value = ' '
+        let success = document.getElementById('success').textContent = ' '
+
+    }
+   
+   
+    function check()
+    {   
+        // let p1 = document.getElementById('p1').textContent = number
+        // let p2 = document.getElementById('p2').textContent = number2
+        
+        // let textvalue = document.getElementById("typedvalues").value;
+        // console.log(typeof(textvalue))
+        // let int = parseInt(textvalue)
+    
+        let textvalue = document.getElementById("typedvalues").value;
+        console.log(typeof(textvalue))
+        let int = parseInt(textvalue)
+        if (p1 + p2 === int)
+        {
+            let d = document.getElementById('success')
+            d.textContent = 'Congratulations!';
+            d.style.color = 'green';
+
+            
+            
+        }
+        else{
+            console.log('False')
+            console.log(int)
+            let d = document.getElementById('success')
+            d.textContent = 'Trai Again!';
+            d.style.color = 'red';
+        }
+    }
+</script>

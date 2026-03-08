@@ -1,0 +1,253 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="ENTER" id="one">
+    <input type="text" placeholder="ENTER" id="two">
+    <button onclick="add()">Click</button>
+    <button onclick="sub()">Click</button>
+    <div id="div"></div>
+</body>
+<script>
+    let a=document.getElementById('one')
+    let b=document.getElementById('two')
+    let c=document.getElementById('div')
+
+    function add()
+    {
+       let aa=Number(a.value)
+       let bb=Number(b.value)
+       c.textContent=aa+bb
+
+    }
+
+    function sub()
+    {
+        nn=Number(a.value)
+        mm=Number(b.value)
+        c.textContent=nn-mm
+    }
+</script>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="a">apple</li>
+        <li class="a">banana</li>
+        <li class="a">mango</li>
+        <li class="a">fruit</li>
+    </ul>
+    <button onclick="one()">Click</button>
+</body>
+<script>
+    let d=document.getElementsByClassName('a')
+    let one=()=>
+    {
+        {
+            for (let a of d)
+            console.log(a.textContent)
+        }
+        d[0].style.color="green"
+        d[1].style.fontSize="30px"
+    }
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="o">apple</li>
+        <li class="o">apple</li>
+        <li class="o">apple</li>
+        <li class="o">apple</li>
+        <button onclick="one()">Click</button>
+       
+</body>
+<script>
+    let d=document.getElementsByClassName('o')
+
+    let one=()=>
+    {
+        {
+            for (let a of d)
+            console.log(a.textContent)
+        }
+        d[0].textContent='hello'
+        d[1].style.color="red"
+    }
+</script>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+    <!-- <input type="radio" name="gender" value="male">male
+    <input type="radio" name="gender" value="Female">Female
+    <button onclick="one()">Click</button> -->
+    <!-- <h1>Hello</h1>
+    <h1>Water</h1>
+    <p>This is what</p>
+    <button onclick="one()">Click</button> -->
+
+    
+    <!-- <h1>hello</h1>
+    <h1>Hi</h1>
+    <button onclick="one()">Click</button>
+
+
+
+</body>
+<script>
+  let tag=document.querySelector('h1')
+
+  let one=()=>
+  {
+    
+        tag[0].textContent='we are you'
+        tag[1].style.backgroundColor='red'
+    
+  }
+
+</script>
+</html> -->
+ <!-- let d=document.getElementsByName('gender')
+    let one=()=>
+    {
+        d.forEach(a=>
+        {
+            console.log(a)
+        if(a.checked)
+        {
+            console.log(a)
+        }
+        })
+        console.log(a )
+    } -->
+    <!-- let tag=document.getElementsByTagName("h1")
+    function one( )
+    {
+        {
+            tag[0].textContent='He'
+        tag[1].textContent='2px solid cyan'
+        }
+    } -->
+
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="change">Hello Sir</h1>
+        <button onclick="one()">Click</button>
+    </body>
+    <script>
+        function one()
+        {
+            document.getElementById('change').textContent="Good Morning"
+            document.getElementById('change').style.color="red"
+        }
+    </script>
+    </html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .lorry {
+        position: relative;
+        left: 0;
+        transition: left 3s linear;
+      }
+      
+      .lorry-body {
+        width: 200px;
+        height: 100px;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .item {
+        width: 30px;
+        height: 30px;
+        background-color: #F9A825;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        margin-right: 10px;
+      }
+      
+      .lorry-wheel {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+      }
+      
+      .lorry-wheel:first-child {
+        left: 20px;
+      }
+      
+      .lorry-wheel:last-child {
+        right: 20px;
+      }
+      
+      .move {
+        left: 300px;
+      }
+      
+      
+</style>
+<body>
+    <div class="lorry">
+        <marquee><img src="https://static.vecteezy.com/system/resources/previews/010/872/418/original/3d-delivery-truck-icon-png.png" alt=""></marquee>
+        <div class="lorry-body">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <div class="lorry-wheel"></div>
+        <div class="lorry-wheel"></div>
+      </div>
+      
+      
+</body>
+<script>
+    setTimeout(function() {
+        var lorryElement = document.querySelector('.lorry');
+        lorryElement.classList.add('move');
+      }, 1000);
+      
+</script>
+</html>
